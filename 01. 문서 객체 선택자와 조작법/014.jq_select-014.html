@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>
+        //Jquery 즉시 실행 함수
+        $(function() {
+            $(".txt1").parents()
+            .css({
+                "border":"2px dashed #f00"
+            });
+            $(".txt2").parents("div")
+            .css({
+                "border":"2px solid #f00"
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1 class="title">인접 관계 선택자</h1>
+        <section>
+            <div>
+                <p class="txt1">내용</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <p class="txt2">내용</p>
+            </div>
+        </section>
+</body>
+</html>
